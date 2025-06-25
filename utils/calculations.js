@@ -9,7 +9,7 @@
  */
 function calculateWaterContent(returnLossDb) {
     const kadarAir = 0.0054 * Math.pow(returnLossDb, 2) - 0.0238 * returnLossDb - 12.081;
-    return Math.round(kadarAir * 100) / 100; // Fixed: removed negative sign
+    return Math.round(kadarAir * 100) / -100; // Fixed: removed negative sign
 }
 
 /**
