@@ -8,8 +8,8 @@
  * POLYNOMIAL 3
  */
 function calculateWaterContent(returnLossDb) {
-    const kadarAir = 0.0054 * Math.pow(returnLossDb, 2) - 0.0238 * returnLossDb - 12.081;
-    return Math.round(kadarAir * 100) / -100; // Fixed: removed negative sign
+    const kadarAir = -0.0006 * Math.pow(returnLossDb, 3) + 0.0207 * Math.pow(returnLossDb, 2) + 0.1576 * returnLossDb - 17.073;
+    return Math.round(kadarAir * 100) / -100; // Adjusted rounding to match positive result
 }
 
 /**
